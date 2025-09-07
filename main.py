@@ -48,7 +48,7 @@ def main():
         for asteroid in asteroids_grp:
             for bullet in shot_grp:
                 if asteroid.collision(bullet):
-                    asteroid.kill()
+                    asteroid.split()
                     bullet.kill()
 
         for ply in drawable:
